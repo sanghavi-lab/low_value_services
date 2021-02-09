@@ -19,7 +19,7 @@ All programs were made to be run on the 2006-2014 Medicare data, formatted like 
 |covars.sas|ourbenes'year’_20.sas7bdat<br>car'year’_20.sas7bdat<br>otpt'year’_20.sas7bdat<br>medpar'year’_20.sas7bdat|ourbenescovars.sas7bdat|
 | flags2.sas | fl_‘measure_number’_'year’_'sensitivity_level'.sas7bdat<br>ourbenescovars.sas7bdat | yranalysis_20.sas7bdat|
 
-Note: 'Year&#39; ranges from 2007-2014. &#39;Measure_number&#39; ranges from 1-31. `Sensitivity\_level&#39; takes on values of &quot;sensitive&quot; and &quot;specific&quot;.
+Note: 'Year&#39; ranges from 2007-2014. &#39;Measure_number&#39; ranges from 1-31. 'Sensitivity\_level&#39; takes on values of &quot;sensitive&quot; and &quot;specific&quot;.
 
 **C2. Identify Primary Care Providers**
 
@@ -40,7 +40,7 @@ We applied finer exclusion criteria to the low-value service denominators follow
 
 | Program name | Input files (File source) | Output files |
 | --- | --- | --- |
-|Denomexclusion.sas|car`year’_20.sas7bdat<br>otpt'year’_20.sas7bdat<br>medpar'year’_20.sas7bdat<br>bsfcc'year’.sas7bdat|excervcar_'year’.sas7bdat<br>excncrpthcar_'year’.sas7bdat<br>expthcar_'year’.sas7bdat<br>exrhinoctcar_'year’.sas7bdat<br>exbackscancar_'year’.sas7bdat<br>excervotpt_'year’.sas7bdat<br>excncrpthotpt_'year’.sas7bdat<br>expthotpt_'year’.sas7bdat<br>exrhinoctotpt_'year’.sas7bdat<br>exbackscanotpt_'year’.sas7bdat<br>exrhcathmedpar_'year’.sas7bdat<br>cerv_ex.sas7bdat<br>hica.sas7bdat<br>stroke.sas7bdat<br>|
+|Denomexclusion.sas|car'year’_20.sas7bdat<br>otpt'year’_20.sas7bdat<br>medpar'year’_20.sas7bdat<br>bsfcc'year’.sas7bdat|excervcar_'year’.sas7bdat<br>excncrpthcar_'year’.sas7bdat<br>expthcar_'year’.sas7bdat<br>exrhinoctcar_'year’.sas7bdat<br>exbackscancar_'year’.sas7bdat<br>excervotpt_'year’.sas7bdat<br>excncrpthotpt_'year’.sas7bdat<br>expthotpt_'year’.sas7bdat<br>exrhinoctotpt_'year’.sas7bdat<br>exbackscanotpt_'year’.sas7bdat<br>exrhcathmedpar_'year’.sas7bdat<br>cerv_ex.sas7bdat<br>hica.sas7bdat<br>stroke.sas7bdat<br>|
 |Denomexclusionflag.sas|car'year’_20.sas7bdat<br>otpt'year’_20.sas7bdat|backscan_ex.sas7bdat<br>head_ex.sas7bdat<br>spinj_ex.sas7bdat|
 |Denommerge.sas | bene_pcp_final.sas7bdat<br>cerv_ex.sas7bdat<br>hica.sas7bdat<br>stroke.sas7bdat<br>backscan_ex.sas7bdat<br>head_ex.sas7bdat<br>spinj_ex.sas7bdat|bene_pcp_final_ex.sas7bdat|
 
@@ -70,9 +70,9 @@ Using these low-value service exposure composites, we ranked NPIs into quintiles
 | --- | --- | --- |
 |Fepredict.R|lvscle_backscan.sas7bdat<br>lvscle_cerv.sas7bdat<br>lvscle_ctdasym.sas7bdat<br>lvscle_head.sas7bdat<br>lvscle_psa.sas7bdat<br>lvscle_pth.sas7bdat<br>lvscle_spinj.sas7bdat<br>lvscle_t3.sas7bdat|lvscle_backscan_fe.sas7bdat<br>lvscle_cerv_fe.sas7bdat<br>lvscle_ctdasym_fe.sas7bdat<br>lvscle_head_fe.sas7bdat<br>lvscle_psa_fe.sas7bdat<br>lvscle_pth_fe.sas7bdat<br>lvscle_spinj_fe.sas7bdat<br>lvscle_t3_fe.sas7bdat|
 |addfixedpred.sas|lvscle_backscan.sas7bdat<br>lvscle_cerv.sas7bdat <br>lvscle_ctdasym.sas7bdat <br>lvscle_head.sas7bdat<br>lvscle_psa.sas7bdat<br>lvscle_pth.sas7bdat<br>lvscle_spinj.sas7bdat<br>lvscle_t3.sas7bdat<br>lvscle_backscan_fe.sas7bdat<br>lvscle_cerv_fe.sas7bdat<br>lvscle_ctdasym_fe.sas7bdat<br>lvscle_head_fe.sas7bdat<br>lvscle_psa_fe.sas7bdat<br>lvscle_pth_fe.sas7bdat<br>lvscle_spinj_fe.sas7bdat<br>lvscle_t3_fe.sas7bdat|lvscle_8measures.sas7bdat<br>lvscle'sample’.dta|
-|Randomeffects.do|lvscle`sample’.dta|lvscle_re`sample'.csv|
+|Randomeffects.do|lvscle'sample’.dta|lvscle_re'sample'.csv|
 |Exhibit3.sas|lvscle_re'sample'.csv<br>lvscle_8measures.sas7bdat|exhibit3.csv|
 |Exhibit5.sas|lvscle_8measures.sas7bdat<br>lvscle_re'sample'.csv|exhibit5.csv|
 |Regression.sas | lvscle_re'sample'.csv|exhibit4.csv|
 
-Note: `Sample&#39; ranges from 1-101.
+Note: 'Sample&#39; ranges from 1-101.
