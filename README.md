@@ -14,7 +14,7 @@ All programs were made to be run on the 2006-2014 Medicare data, formatted like 
 
 | Program name | Input files (File source) | Output files |
 | - | - | - |
-| Mcarextracts.sas | Beneficiary summary files for the index year and prior year Carrier (line and claim), outpatient (line and claim), and MedPAR claims files for the index year and prior year BETOS to HCPCS crosswalk for the index year and prior year | ourbenes'year'_20.sas7bdat<br>car'year'_20.sas7bdat<br>otpt'year'_20.sas7bdat<br>medpar'year'_20.sas7bdat
+| Mcarextracts.sas | Beneficiary summary files for the index year and prior year <br>Carrier (line and claim), outpatient (line and claim), and MedPAR claims files for the index year and prior year <br>BETOS to HCPCS crosswalk for the index year and prior year | ourbenes'year'_20.sas7bdat<br>car'year'_20.sas7bdat<br>otpt'year'_20.sas7bdat<br>medpar'year'_20.sas7bdat
 |flags.sas|car'year'_20.sas7bdat<br>otpt'year'_20.sas7bdat<br>medpar'year'_20.sas7bdat|fl_'measure_number'_'year'_'sensitivity_level'.sas7bdat|
 |covars.sas|ourbenes'year’_20.sas7bdat<br>car'year’_20.sas7bdat<br>otpt'year’_20.sas7bdat<br>medpar'year’_20.sas7bdat|ourbenescovars.sas7bdat|
 | flags2.sas | fl_‘measure_number’_'year’_'sensitivity_level'.sas7bdat<br>ourbenescovars.sas7bdat | yranalysis_20.sas7bdat|
