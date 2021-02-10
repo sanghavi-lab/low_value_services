@@ -1,6 +1,6 @@
 # Description of all code files
 
-These notes briefly highlight the purposes of the code files that are in the tables in each section. All code files listed below are shareable per our Data Use Agreement (DUA) with the Centers for Medicare and Medicaid Services (CMS) and will be posted publicly on our GitLab page. README file is also available in docx.
+These notes briefly highlight the purposes of the code files that are in the tables in each section. All code files listed below are shareable per our Data Use Agreement (DUA) with the Centers for Medicare and Medicaid Services (CMS) and will be posted publicly on our GitLab page.
 
 **Software**
 
